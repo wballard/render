@@ -1,0 +1,20 @@
+{
+  "name": "render",
+  "version": "0.0.1",
+  "description": "Command line for running yaml/json through a template",
+  "dependencies": {
+    "coffee-script": "",
+    "docopt": "",
+    "handlebars": "",
+    "yaml-js": ""
+  },
+  "engine": {
+    "node": ">=0.8.11"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "bin": {
+    "render": "./bin/render"
+  }
+}
