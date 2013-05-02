@@ -36,6 +36,13 @@ Read the template, returning a template function to use in rendering.
             console.error "No template renderer for #{templatepath}"
             process.exit 1
 
+Helper functions? Load em up via require!
+
+    if cli.options['--require']
+        helperpath = path.join process.cwd(), cli.options['--require']
+        helpers = require helperpath
+        for name, helper of helpers
+            handlebars.registerHelper name, helper
 
 Read standard in, sending this along as a context to the template. This just
 buffers in a string, the input is expected to not be shocking huge.

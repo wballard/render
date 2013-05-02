@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Command line for running yaml/json through a template",
   "dependencies": {
-    "coffee-script": "",
+    "coffee-script": "git://github.com/jashkenas/coffee-script.git",
     "docopt": "",
     "handlebars": "",
     "js-yaml": ""

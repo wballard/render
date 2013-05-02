@@ -13,7 +13,7 @@ test_handlebars:
 	$(DIFF) /tmp/$@ test/expected/$@
 
 test_handlebars_with_helpers:
-	cat test/sample.yaml | $(RENDER) --require ./test/handlebarhelpers test/withhelpers.handlebars \
+	cat test/sample.yaml | $(RENDER) --require ./test/handlebarhelpers.coffee test/withhelpers.handlebars \
 	| tee /tmp/$@
 	$(DIFF) /tmp/$@ test/expected/$@
 

@@ -7,6 +7,6 @@ Usage:
 Options:
   --version           Print the current version
   --help              Tells us all about it
-  --require           Require an additional module of helper functions
+  --require=<require> Require an additional module of helper functions
 
 Render reads the YAML or JSON from stdin, use this in a shell pipeline.
