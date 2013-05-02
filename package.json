@@ -6,7 +6,7 @@
     "coffee-script": "",
     "docopt": "",
     "handlebars": "",
-    "yaml-js": ""
+    "js-yaml": ""
   },
   "engine": {
     "node": ">=0.8.11"

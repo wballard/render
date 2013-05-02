@@ -1,0 +1,12 @@
+Render, command line for turning JSON and YAML into yet another string
+by way of a template.
+
+Usage:
+  render [options] <template>
+
+Options:
+  --version           Print the current version
+  --help              Tells us all about it
+  --require           Require an additional module of helper functions
+
+Render reads the YAML or JSON from stdin, use this in a shell pipeline.
