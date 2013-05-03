@@ -5,6 +5,7 @@ Main command line entry point.
     handlebars = require 'handlebars'
     yaml = require 'js-yaml'
     fs = require 'fs'
+    _ = require 'lodash'
 
 Actual command line processing via docopt.
 
@@ -52,6 +53,10 @@ buffers in a string, the input is expected to not be shocking huge.
         buffers.push chunk
     process.stdin.on 'end', ->
         context = yaml.safeLoad(Buffer.concat(buffers).toString())
+
+I love environment variables, so I'm merging them in here.
+
+        context = _.extend process.env, context
         process.stdout.write renderer(cli.options['<template>'])(context)
 
 Start it up!

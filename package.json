@@ -6,6 +6,7 @@
     "coffee-script": "git://github.com/jashkenas/coffee-script.git",
     "docopt": "",
     "handlebars": "",
+    "lodash": "",
     "js-yaml": ""
   },
   "engine": {
